@@ -4,11 +4,15 @@ version = "0.1.0"
 description = ""
 authors = ["chhk <chorhatarahuduketuri@gmail.com>"]
 readme = "README.md"
-packages = [{include = "advent_of_code_2023"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+pytest = "^7.4.3"
+black = "^23.11.0"
+flake8 = "^6.1.0"
 
+[tool.pytest.ini_options]
+pythonpath = [".", 'advent_of_code']
 
 [build-system]
 requires = ["poetry-core"]
